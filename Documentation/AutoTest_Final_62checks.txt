@@ -1,0 +1,66 @@
+AUTOMATED PLAYTEST REPORT
+Passed: 62   Failed: 0
+
+Frame rate while playing: average 45 fps, 1% low 28 fps (3772 frames) on AMD Radeon(TM) Vega 8 Graphics
+PASS  Main menu shows its buttons  [7 active buttons]
+PASS  Main menu has a player name field
+PASS  The typed player name is saved  [Name=Zahoor]
+PASS  High Scores screen opens and shows the empty table
+PASS  Settings panel opens with sliders
+PASS  Master volume slider changes the saved setting  [Master=0.5]
+PASS  New Game loads the Game scene
+PASS  The intro finishes and play begins  [State=Playing]  {31 fps}
+PASS  Player exists and is tagged Player
+PASS  The temple has its doors, traps and collectibles  [5 doors, 11 spike tiles, 14 collectibles]
+PASS  Every sentinel stands on the NavMesh  [4 sentinels]
+PASS  WASD move moves the explorer forward  [6.8 m in 2 s]  {32 fps}
+PASS  Sprint is faster than walking  [5.6 m/s]  {37 fps}
+PASS  Jump lifts the explorer  [0.91 m]  {33 fps}
+PASS  Mouse look orbits the camera
+PASS  The entrance door slams shut when the explorer enters the hall  {42 fps}
+PASS  The Echo Lens is ready  {48 fps}
+PASS  The Echo pulse reveals the hidden rune mural  [1.00]  {49 fps}
+PASS  The Echo Lens goes on cooldown
+PASS  A spike tile damages the explorer when it strikes  [100 -> 56]  {50 fps}
+PASS  Taking the Sun Key gives the key and points  [HasKey=True, score 0 -> 350]  {52 fps}
+PASS  The objective moves on to the Sun Door  [Stage=OpenSunDoor]
+PASS  A closed door shows a prompt  {43 fps}
+PASS  The Sun Door opens with the Sun Key  {44 fps}
+PASS  Entering the rune chamber advances the mission  [Stage=SolveRunes]  {50 fps}
+PASS  There are four rune pedestals
+PASS  A wrong rune shocks the explorer and resets the puzzle  [56 -> 41]  {49 fps}
+PASS  The right order solves the puzzle and opens the gate  {52 fps}
+PASS  Solving the runes gives points and moves the mission on  [Stage=CrossGallery]
+PASS  A swinging blade cuts the explorer standing in its path  [100 -> 16]  {55 fps}
+PASS  A flame vent burns the explorer in its jet  [100 -> 70.3]  {55 fps}
+PASS  Taking the Moon Key gives the key  {51 fps}
+PASS  The one-way vault exit opens after the Moon Key
+PASS  The objective moves on to the Moon Door  [Stage=OpenMoonDoor]
+PASS  The Moon Door opens with the Moon Key  {41 fps}
+PASS  The objective moves on to the Heart  [Stage=TakeHeart]
+PASS  Taking the Heart starts the escape timer  [left 98 s]  {41 fps}
+PASS  Taking the Heart gives points
+PASS  The entrance opens for the escape
+PASS  The boulder starts rolling  {42 fps}
+PASS  Running out of time ends the run (the temple seals itself)  [State=GameOver]
+PASS  Reaching the entrance with the Heart completes the mission  [State=Complete]  {45 fps}
+PASS  Escaping adds time, escape and health bonuses  [escape 495, time 1194, health 400]
+PASS  The finished run is saved on the high-score table under the player's name  [Zahoor 4389 ESCAPED]
+PASS  A Sun relic is collected for score  [Relics=1]  {42 fps}
+PASS  The score shows on the HUD  [500]
+PASS  Player death leads to the Game Over screen  [State=GameOver]  {44 fps}
+PASS  A death is recorded on the profile table
+PASS  Retry puts the explorer back at the checkpoint and skips the intro  [0.0 m from the checkpoint]  {43 fps}
+PASS  Retry restores keys, relics and score  [key True, relics 1, score 500]
+PASS  Collected relics stay collected after a Retry  [4 relics left in the temple]
+PASS  The Echo pulse stuns a nearby sentinel  [State=Stunned]  {49 fps}
+PASS  A sentinel strikes an explorer who stays close  [100 -> 70]  {49 fps}
+PASS  A life orb restores health  [60 -> 95]  {43 fps}
+PASS  The M key opens the temple map  {44 fps}
+PASS  Esc closes the map first (does not pause)
+PASS  Esc pauses the game
+PASS  Esc resumes the game  {44 fps}
+PASS  Exploring reveals the map
+PASS  Back in the menu
+PASS  The High Scores screen lists the saved runs  [1.   Zahoor   -   4389 points   (ESCAPED, 0 relics, 00:06) | 2.   Zahoor   -   2200 points   (TRAPPED, 0 relics, 00:56) | 3.   Zahoor   -   410 points   (TRAPPED, 1 relics, 00:08) | ]
+PASS  The profile statistics are updated  [games 3, wins 1, best 4389]

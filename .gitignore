@@ -1,0 +1,12 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+[Bb]uilds/
+*.csproj
+*.sln
+*.log
+Windows_Build/*_BurstDebugInformation_DoNotShip/
+Windows_Build/*_BackUpThisFolder_ButDontShipItWithYourGame/
+.vs/
